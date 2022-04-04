@@ -1,13 +1,13 @@
 
 import './App.css';
 import Home from './components/Home/Home';
-import Review from './components/Review/Review';
 import Blog from './components/Blog/Blog';
 import About from './components/About/About';
 import { Route, Routes } from 'react-router-dom';
 import NotFound from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Dashboard from './components/Dashboard/Dashboard';
+import AllReview from './components/Review/AllReview';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/review" element={<Review></Review>}></Route>
+        <Route path="/reviews" element={<AllReview></AllReview>}></Route>
         <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/about" element={<About></About>}></Route>
