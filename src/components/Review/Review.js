@@ -5,10 +5,10 @@ import ShowReview from './ShowReview';
 
 const Review = () => {
     const [reviews] = ReviewData()
-    const navigate = useNavigate()
+    const SeeAllBtn = useNavigate()
     return (
         <div className='text-center '>
-            <h2 className='my-5 fw-bold'>Customer Reviews (3) </h2>
+            <h2 className='my-5 fw-bold'>Customer Reviews</h2>
             <div className='container'>
                     {
                         reviews.slice(0, 3).map(review => <ShowReview
@@ -16,7 +16,7 @@ const Review = () => {
                             key={review.id}
                         ></ShowReview>)
                     }
-                <button className='btn btn-info text-white my-3' onClick={() => navigate('/reviews')}>See All Review</button>
+                <button className='bg-blue-500  text-white py-2 px-10 text-lg rounded my-3' onClick={() => SeeAllBtn('/reviews')}>See All Review</button>
 
             </div>
 
