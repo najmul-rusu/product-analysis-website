@@ -5,13 +5,16 @@ import ShowReview from './ShowReview';
 const AllReview = () => {
     const [reviews] = ReviewData()
     return (
-        <div className='container my-5 text-center'>
-            <h5 className='text-info fw-bold my-5'>All Reviews</h5>
+        <div>
+            <h3 className='mt-10 text-3xl font-bold'>All Reviews</h3>
             
-                { 
-                    reviews.map(review => <ShowReview key={review.id} review={review}></ShowReview>)
-                }
-            
+
+            <div className='grid grid-cols-3'>
+            {
+                reviews.map(review => <ShowReview key={review.id} review={review}></ShowReview>)
+            }
+            </div>
+
         </div>
     );
 };

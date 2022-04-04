@@ -44,7 +44,7 @@ const Dashboard = () => {
     return (
         <div className='flex'>
             <div className='m-10'>
-                <h3 className="text-2xl text-center mb-5">
+                <h3 className="text-2xl text-center m-5 font-bold">
                     Month Wise Sell</h3>
                 <LineChart width={550} height={350} data={chartData}>
                     <Line type="monotone" dataKey="sell" stroke="#8884d8" activeDot={{ r: 8 }} />
@@ -54,7 +54,7 @@ const Dashboard = () => {
                 </LineChart>
             </div>
             <div className='m-10'>
-                <h3 className="text-2xl text-center mb-5">
+                <h3 className="text-2xl text-center m-5 font-bold">
                     Invesment vs Revenue
                 </h3>
                 <BarChart width={550} height={400} data={chartData}>
