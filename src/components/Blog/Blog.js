@@ -1,10 +1,8 @@
 import React from 'react';
-import '../Blog/Blog.css'
-
 const Blog = () => {
     return (
-        <div className='qna'>
-            <h2 className='qna-titel text-2xl font-bold'>Question and Answer</h2>
+        <div className='m-20'>
+            <h2 className='text-2xl font-bold'>Question and Answer</h2>
             <h3 className='text-left text-xl font-bold my-5'>What is Context API?</h3>
             <p className='text-left'>The React Context API is a way to effectively create global variables for a React app that can be passed around. This is an alternative to "prop drilling" or moving props from grandparents to children to parents. The topic is also referred to as a simple, light method for managing the state using Redox.
 
